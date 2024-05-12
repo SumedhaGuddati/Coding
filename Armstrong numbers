@@ -1,0 +1,21 @@
+3.Armstrong Numbers
+For a given 3 digit number, find whether it is armstrong number or not. An Armstrong number of three digits is a number such that the sum of the cubes of its digits is equal to the number itself. Return "Yes" if it is a armstrong number else return "No".
+
+class Solution {
+  public:
+    string armstrongNumber(int n){
+        // code here
+        int temp,r,sum=0;
+        temp=n;
+        while(n>0)
+        {
+            r=n%10;
+            sum=sum+pow(r,3);
+            n=n/10;
+        }
+        if(temp==sum)
+        return "Yes";
+        else
+        return "No";
+    }
+};
