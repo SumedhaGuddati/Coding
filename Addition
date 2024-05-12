@@ -1,0 +1,10 @@
+8. Addition of 2 numbers
+Given two numbers A and B. Your task is to return the sum of A and B.
+
+class Solution{   
+public:
+    int addition(int A, int B){
+        // code here 
+        return A+B;
+    }
+};
