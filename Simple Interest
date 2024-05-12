@@ -1,0 +1,10 @@
+18. Simple Interest
+Given three integers P,R and T, denoting Principal, Rate of Interest and Time period respectively.Compute the simple Interest.
+
+class Solution {
+  public:
+    double simpleInterest(int P, int R, int T) {
+        // code here
+        return (double)(P*R*T)/100;
+    }
+};
