@@ -1,0 +1,20 @@
+4.Reverse digits
+You are given an integer N, reverse the digits of given number N, ensuring that the reversed number has no leading zeroes. Return the resulting reversed number.
+
+class Solution
+{
+	public:
+		long long int reverse_digit(long long int n)
+		{
+		    // Code here
+		    long long int rev=0;
+		    int r;
+		    while(n>0)
+		    {
+		        r=n%10;
+		        rev=rev*10+r;
+		        n=n/10;
+		    }
+		    return rev;
+		}
+};
