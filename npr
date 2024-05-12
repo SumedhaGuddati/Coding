@@ -1,0 +1,12 @@
+12. npr
+Write a program to calculate nPr. nPr represents n permutation r and value of nPr is (n!) / (n-r)!.
+
+class Solution{
+public:
+    long long nPr(int n, int r){
+        // code here
+        /*if(r==0)
+        return 1;*/
+        return tgamma(n+1)/tgamma(n-r+1);
+    }
+};
